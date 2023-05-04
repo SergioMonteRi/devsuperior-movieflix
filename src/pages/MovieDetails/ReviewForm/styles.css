@@ -1,0 +1,10 @@
+@media screen and (min-width: 1200px) {
+  .review-form-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-form-btn-container div{
+    width: 450px;
+  }
+}

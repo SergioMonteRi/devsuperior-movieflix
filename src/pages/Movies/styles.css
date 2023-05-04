@@ -1,0 +1,18 @@
+.movies-container {
+  color: #ffffff;
+  /* padding: 15px 18px 0px 18px; */
+}
+
+.movies-container h1 {
+  font-size: 24px;
+}
+
+.movies-container a {
+  font-size: 18px;
+}
+
+.movies-itens {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}

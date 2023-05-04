@@ -1,0 +1,14 @@
+.generic-btn-container button {
+  width: 100%;
+  height: 50px;
+}
+
+@media (min-width: 1200px) {
+  .generic-btn-container button {
+    height: 75px;
+  }
+
+  .generic-btn-container h6 {
+    font-size: 28px;
+  }
+}
