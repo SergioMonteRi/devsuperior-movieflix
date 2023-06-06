@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 import { MovieReview } from "types/types";
 
@@ -40,9 +41,10 @@ const ReviewForm = ({ onSubmitReview, movieId }: ReviewFormProps) => {
       .then((response) => {
         setValue("text", "");
         onSubmitReview(response.data);
+        toast.success("Review enviado com sucesso");
       })
       .catch((error) => {
-        console.log(error);
+        toast.error("Falha ao enviar review");
       });
   };
   return (

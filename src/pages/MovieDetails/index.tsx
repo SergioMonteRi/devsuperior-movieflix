@@ -10,6 +10,7 @@ import { getMovieReviews } from "util/requests/MovieRequest/movieRequest";
 
 import "./styles.css";
 import { hasAnyRoles } from "util/auth/auth";
+import MovieCardDetails from "./MovieCard";
 
 type UrlParams = {
   movieId: string;
@@ -38,10 +39,7 @@ const MovieDetails = () => {
 
   return (
     <div className="movie-details-container">
-      <div className="movie-details-description">
-        <h1 className="movie-details-title me-2">Tela detalhes do filme id:</h1>
-        <h1>{movieId}</h1>
-      </div>
+      <MovieCardDetails />
 
       {hasAnyRoles(["ROLE_MEMBER"]) && (
         <ReviewForm onSubmitReview={onSubmitReview} movieId={movieId} />

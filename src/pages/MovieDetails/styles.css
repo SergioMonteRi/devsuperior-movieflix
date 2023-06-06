@@ -5,16 +5,14 @@
   color: #ffffff;
 }
 
-.movie-details-description {
-  display: block;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .movie-details-container {
     padding: 40px;
   }
+}
 
-  .movie-details-description {
-    display: flex;
+@media screen and (min-width: 1400px) {
+  .movie-details-container  {
+    padding: 40px 130px;
   }
 }

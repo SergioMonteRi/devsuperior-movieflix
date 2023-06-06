@@ -1,6 +1,6 @@
 .movies-container {
   color: #ffffff;
-  /* padding: 15px 18px 0px 18px; */
+  padding: 20px 10px 0px 10px;
 }
 
 .movies-container h1 {
@@ -11,8 +11,14 @@
   font-size: 18px;
 }
 
-.movies-itens {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .movies-container {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .movies-container {
+    padding: 40px 140px 0px 140px;
+  }
 }
